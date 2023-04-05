@@ -15,7 +15,7 @@ function Carousel() {
               </div>
               <div className="carousel-ket">
                 <h3>Money Heist</h3>
-                <button className="btn btn-warning rounded-5" onclick="toggleParagraph()" id="myButton">more</button>
+                <button className="btn btn-warning rounded-5" id="myButton">more</button>
                 <p id="addElementMoneyHeist"></p>
               </div> 
             </div>

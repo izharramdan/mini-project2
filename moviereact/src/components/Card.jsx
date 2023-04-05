@@ -1,4 +1,4 @@
-function Card() {
+const Card = ({imageURL, name, date}) => {
     return (
         <section className="trending">
         <h1>trending now</h1>
@@ -8,7 +8,7 @@ function Card() {
                   <img src="images/vertical poster/jurassic world.jpg" className="card-img" alt="..." />
                   <div className="card-img-overlay card-col">
                     <div className="card-caption">
-                      <h5 className="card-title">Jurrasic World: Dominion</h5>
+                      <h5 className="card-title">{name}</h5>
                     </div>
                     <div className="button-card">
                       <div className="btn-play">

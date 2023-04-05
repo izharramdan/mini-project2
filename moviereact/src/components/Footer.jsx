@@ -5,15 +5,15 @@ function Footer() {
     <footer className="footer-content row">
       <div className="contact col">
         <div className="mb-3">
-          <label for="exampleFormControlInput1" className="form-label">name</label>
+          <label htmlFor="exampleFormControlInput1" className="form-label">name</label>
           <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="enter your name" />
         </div>
         <div className="mb-3">
-            <label for="exampleFormControlInput1" className="form-label">email address</label>
+            <label htmlFor="exampleFormControlInput1" className="form-label">email address</label>
             <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="enter your email" />
           </div>
           <div className="mb-3">
-            <label for="exampleFormControlTextarea1" className="form-label">your messages</label>
+            <label htmlFor="exampleFormControlTextarea1" className="form-label">your messages</label>
             <textarea className="form-control txt-area" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <button type="button" className="btn btn-danger">
