@@ -18,6 +18,7 @@ useEffect(() => {
 },[])
     return (
       <div className="trending">
+        <h1>popular</h1>
       <div className="cards-wrapper">
       {movies.slice(0,5).map((movie, index)=>{
       return (
@@ -42,7 +43,6 @@ useEffect(() => {
         </>
       )
       })}
-
       </div>
 </div>
     )

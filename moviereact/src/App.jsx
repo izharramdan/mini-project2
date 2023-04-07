@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Carousel from './components/Carousel'
 import Card from './components/Card'
 import Footer from './components/Footer'
+import Modal from './components/Modal'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
       <Navbar />
       <Carousel /> 
       
-      <Card />   
+      <Card />
+      <Modal />   
       <Footer />    
       </div>
     </div>
