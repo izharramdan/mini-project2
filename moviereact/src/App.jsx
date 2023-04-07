@@ -18,7 +18,7 @@ function App() {
       <Carousel /> 
       
       <Card />
-      <Modal />   
+      {/* <Modal />    */}
       <Footer />    
       </div>
     </div>

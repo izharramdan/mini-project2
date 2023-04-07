@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Modal from './Modal'
 
 
 const Card = () => {
@@ -22,7 +23,7 @@ useEffect(() => {
       <div className="cards-wrapper">
       {movies.slice(0,5).map((movie, index)=>{
       return (
-        <>
+        <div key={index}>
         <div className="card text-bg-dark">
           <div className="card-img"></div>
           <img src={getPosterURL(movie.poster_path)} className="card-img" alt="..." />
@@ -35,12 +36,13 @@ useEffect(() => {
                 <a href="player.html"><button type="button" className="btn btn-danger"><i className="fa-sharp fa-solid fa-play"></i></button></a>
               </div>
               <div className="btn-info">
-                <button type="button" className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#movie1Modal"><i className="fa-solid fa-circle-info"></i></button>
+                <button type="button" className="btn btn-warning" data-bs-toggle="modal" data-bs-target={`#movieModal${index}`}><i className="fa-solid fa-circle-info"></i></button>
               </div>
             </div>
           </div>
         </div>
-        </>
+        <Modal movie={movie} index={index} />
+        </div>
       )
       })}
       </div>

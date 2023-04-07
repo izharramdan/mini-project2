@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 
-const Modal = () => {
+const Modal = ({movie, index}) => {
 
   const [movies, setMovies] = useState([])
 
@@ -17,12 +17,12 @@ useEffect(() => {
 
 },[])
     return (
-<div className="modal fade" id="movie1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <>
+<div className="modal fade" id={`movieModal${index}`} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div className="modal-dialog modal-dialog-centered">
   <div className="modal-content card-content">
     <div className="modal-card">
-    {movies.slice(0,1).map((movie, index)=>{
-  return (
+
     <div className="card mb-3" key={index}>
       <div className="row g-0">
         <div className="col-md-4">
@@ -39,12 +39,11 @@ useEffect(() => {
         </div>
       </div>
     </div>
-  )
-})}
+    </div>
     </div>
   </div>
-</div>
-</div>
+  </div>
+</>
     )
 }
 
