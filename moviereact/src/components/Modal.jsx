@@ -27,6 +27,8 @@ useEffect(() => {
       <div className="row g-0">
         <div className="col-md-4">
           <img src={getPosterURL(movie.poster_path)} className="img-fluid" alt="..." />
+          <p>ID: {movie.id}</p>
+          <p>Popularity: {movie.popularity}</p>
         </div>
         <div className="col-md-8">
           <div className="card-body">
