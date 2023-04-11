@@ -6,7 +6,7 @@ const Carousel = () => {
   const [movies, setMovies] = useState([]);
 
   const getPosterURL = (posterpath) => {
-    return `https://www.themoviedb.org/t/p/w1280${posterpath}`;
+    return `https://www.themoviedb.org/t/p/original${posterpath}`;
   };
 
   useEffect(() => {

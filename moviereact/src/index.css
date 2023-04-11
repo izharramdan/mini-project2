@@ -121,6 +121,7 @@ body {
   border-radius: 25px;
   height: 80vh;
   object-fit: cover;
+  object-position: 10% 0%;
 }
 
 .carousel-caption {
@@ -295,11 +296,14 @@ body {
 .modal-card .card {
   background-color: rgba(240, 208, 55, 0.8);
   border-radius: 25px;
+  height: 42vh;
+  width: 30vw;
 }
 
 .modal-card .card img {
   padding: 8px;
   border-radius: 25px;
+  height: 30vh;
   object-fit: cover;
 }
 
@@ -308,8 +312,19 @@ body {
   font-weight: bold;
 }
 
+.modal-card p {
+  padding: 6px;
+}
+
 .modal-card .card button {
   border-radius: 25px;
+}
+
+.modal-card .card-body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* modal end */
