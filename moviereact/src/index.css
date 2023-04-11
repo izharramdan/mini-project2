@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee+Spice&family=Inter:wght@500&family=Kumbh+Sans:wght@700&family=Lato:ital@1&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@700&family=Poppins:wght@700&family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee+Spice&family=Inter:wght@500&family=Kumbh+Sans:wght@700&family=Lato:ital@1&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@700&family=Poppins:wght@700&family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -6,14 +6,13 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   /* background-color: #3C3B66;  */
-  background-color: #262547; 
-  background-image: url(../images/bg-img.jpg); 
+  background-color: #262547;
+  background-image: url(../images/bg-img.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-
 }
 
 /* navbar start */
@@ -22,7 +21,7 @@ body {
   margin-top: -5px;
   /* background-image: url(../images/hero1.jpg); */
   background-color: rgba(114, 32, 96, 0.9);
-  background-position: 15% 0; 
+  background-position: 15% 0;
   border-radius: 10%;
   height: 80px;
   z-index: 9999;
@@ -39,13 +38,13 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Bungee Spice', cursive;
+  font-family: "Bungee Spice", cursive;
   font-size: 64px;
   margin-left: 2.5vw;
 }
 
 .navbar-brand span {
-  font-family: 'Bungee Shade', cursive;
+  font-family: "Bungee Shade", cursive;
   color: yellowgreen;
   transform: rotate(45deg);
   display: inline-block;
@@ -115,7 +114,7 @@ body {
 /* carousel start */
 
 .carousel-hero {
-  margin:-75px 5px 0 5px;
+  margin: -75px 5px 0 5px;
 }
 
 .carousel-inner img {
@@ -247,7 +246,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   width: 100%;
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 
 .or_text {
@@ -279,7 +278,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #F6A973;
+  color: #f6a973;
   text-decoration: none;
 }
 
@@ -386,7 +385,7 @@ body {
 }
 
 .faq .faq-logo h1 {
-  font-family: 'Bungee Spice', cursive;
+  font-family: "Bungee Spice", cursive;
   font-size: 90px;
   font-style: none;
   display: flex;
@@ -407,7 +406,7 @@ body {
 }
 
 .faq .faq-logo span {
-  font-family: 'Bungee Shade', cursive;
+  font-family: "Bungee Shade", cursive;
   color: yellowgreen;
   transform: rotate(45deg);
 }
@@ -423,9 +422,9 @@ body {
 /* Laptop */
 
 @media (max-width: 1366px) {
-html {
-  font-size: 75%;
-}
+  html {
+    font-size: 75%;
+  }
 }
 
 /* Tablet */
@@ -436,62 +435,60 @@ html {
   }
 
   .nav-item a {
-      margin-left: 0px;
-      color: white;
-      display: flex;
-      justify-content: center;
+    margin-left: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
   }
 
   .right-content {
-      margin-right: 0vw;
+    margin-right: 0vw;
   }
 
   .navbar-nav {
-      background-color: rgba(105, 93, 32, 0.5);
+    background-color: rgba(105, 93, 32, 0.5);
   }
 }
 
 @media (max-width: 768px) {
-html {
-  font-size: 62.5%;
-}
+  html {
+    font-size: 62.5%;
+  }
 
-.nav-content {
-  display: none;
-}
+  .nav-content {
+    display: none;
+  }
 
-.cards-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: fit-content;
-  height: fit-content;
-}
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+  }
 
-.card {
-  align-items: center;
-  width: fit-content;
-  margin: 10px;
-}
+  .card {
+    align-items: center;
+    width: fit-content;
+    margin: 10px;
+  }
 
-.cards-wrapper .card img {
-  object-fit: cover;
-  border-radius: 25px;
+  .cards-wrapper .card img {
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .contact .form-control {
+    width: 75vw;
+  }
+  .faq-content {
+    margin: 5vh;
+  }
 }
-.contact .form-control {
-  width: 75vw;
-}
-.faq-content {
-  margin: 5vh;
-}
-
-}  
 
 /* Mobile */
 
 @media (max-width: 450px) {
-html {
-  font-size: 55%;
-}
-
+  html {
+    font-size: 55%;
+  }
 }
