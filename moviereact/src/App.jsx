@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
-import Modal from "./components/Modal";
+import ModalSignIn from "./components/ModalSignIn";
+import Login from "./components/Login";
+import { Route, Routes } from "react-router-dom";
+import Account from "./components/Account";
 
 function App() {
   return (
@@ -13,10 +14,14 @@ function App() {
       <div>
         <Navbar />
         <Carousel />
-
         <Card />
-        {/* <Modal />    */}
+        {/* <ModalSignIn /> */}
+        <Login />
         <Footer />
+        {/* <Routes>
+          <Route path='/login' element={<Login />} />
+          <Route path='/account' element={<Account />} />
+        </Routes> */}
       </div>
     </div>
   );
