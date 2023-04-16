@@ -144,6 +144,7 @@ body {
   font-style: italic;
   color: rgba(240, 208, 55, 1);
   font-weight: bold;
+  font-size: 3rem;
 }
 
 .carousel-caption .btn-play {
@@ -194,11 +195,11 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   font-weight: 900;
   color: rgb(235, 235, 235);
   text-shadow: 5px 1px 4px #000000;
-  padding-top: 10vh;
+  /* padding-top: 1vh; */
 }
 
 .button-card {
@@ -221,6 +222,7 @@ body {
 
 .modal-content {
   background-color: rgba(38, 37, 71, 0);
+  border: none;
 }
 
 .signin {
@@ -236,10 +238,22 @@ body {
 }
 
 .pb_41 {
-  padding-bottom: 41px;
+  padding-bottom: 20px;
 }
 
-.input_email {
+.input_username {
+  border: 1.5px solid #000032;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 100%;
+  color: #b3b3b3;
+  margin-bottom: 20px;
+}
+
+.input_password {
   border: 1.5px solid #000032;
   border-radius: 25px;
   font-style: normal;

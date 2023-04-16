@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Modal from "./Modal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faInfo, faInfoCircle, faPlay } from '@fortawesome/free-solid-svg-icons'
 
 const Card = () => {
   const [movies, setMovies] = useState([]);
 
   const getPosterURL = (posterpath) => {
-    return `https://www.themoviedb.org/t/p/w220_and_h330_face${posterpath}`;
+    return `https://www.themoviedb.org/t/p/w1280${posterpath}`;
   };
 
   useEffect(() => {
@@ -43,7 +45,7 @@ const Card = () => {
                     <div className="btn-play">
                       <a href="player.html">
                         <button type="button" className="btn btn-danger">
-                          <i className="fa-sharp fa-solid fa-play"></i>
+                          <i className="fa-sharp fa-solid fa-play"><FontAwesomeIcon icon={faPlay} /></i>
                         </button>
                       </a>
                     </div>
@@ -54,7 +56,7 @@ const Card = () => {
                         data-bs-toggle="modal"
                         data-bs-target={`#movieModal${movie.id}`}
                       >
-                        <i className="fa-solid fa-circle-info"></i>
+                        <i className="fa-solid fa-circle-info"><FontAwesomeIcon icon={faInfoCircle} /></i>
                       </button>
                     </div>
                   </div>
@@ -84,7 +86,7 @@ const Card = () => {
                     <div className="btn-play">
                       <a href="player.html">
                         <button type="button" className="btn btn-danger">
-                          <i className="fa-sharp fa-solid fa-play"></i>
+                          <i className="fa-sharp fa-solid fa-play"><FontAwesomeIcon icon={faPlay} /></i>
                         </button>
                       </a>
                     </div>
@@ -95,7 +97,7 @@ const Card = () => {
                         data-bs-toggle="modal"
                         data-bs-target={`#movieModal${movie.id}`}
                       >
-                        <i className="fa-solid fa-circle-info"></i>
+                        <i className="fa-solid fa-circle-info"><FontAwesomeIcon icon={faInfoCircle} /></i>
                       </button>
                     </div>
                   </div>

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Modal from "./Modal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faInfo, faInfoCircle, faPlay } from '@fortawesome/free-solid-svg-icons'
 
 const Carousel = () => {
   const [movies, setMovies] = useState([]);
@@ -67,7 +69,7 @@ const Carousel = () => {
                     <div className="btn-play">
                       <a href="player.html" id="buttonAlert1">
                         <button type="button" className="btn btn-danger">
-                          <i className="fa-sharp fa-solid fa-play"></i>
+                          <i className="fa-sharp fa-solid fa-play"><FontAwesomeIcon icon={faPlay} /></i>
                         </button>
                       </a>
                     </div>
@@ -88,7 +90,7 @@ const Carousel = () => {
                     <div className="btn-play">
                       <a href="player.html" id="buttonAlert1">
                         <button type="button" className="btn btn-danger">
-                          <i className="fa-sharp fa-solid fa-play"></i>
+                          <i className="fa-sharp fa-solid fa-play"><FontAwesomeIcon icon={faPlay} /></i>
                         </button>
                       </a>
                     </div>
