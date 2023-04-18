@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faInfo, faInfoCircle, faPlay } from '@fortawesome/free-solid-svg-icons'
 
 const Modal = ({ movie, index }) => {
   const [movies, setMovies] = useState([]);
@@ -48,11 +50,11 @@ const Modal = ({ movie, index }) => {
                       <h4 className="card-title-modal">
                         {movie.original_title}
                       </h4>
-                      <p className="card-text">{movie.overview}</p>
+                      <p className="card-text">{movie.overview.slice(0, 100)}....</p>
                       <div className="btn-play">
                         <a href="player.html">
                           <button type="button" className="btn btn-danger">
-                            <i className="fa-sharp fa-solid fa-play"></i>
+                            <i className="fa-sharp fa-solid fa-play"><FontAwesomeIcon icon={faPlay} /></i>
                           </button>
                         </a>
                       </div>

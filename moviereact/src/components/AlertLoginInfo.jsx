@@ -16,19 +16,21 @@ function Alert() {
 
   return (
     <div className="bread-alert">
-      <div className="alert alert-success" role="alert">
+      <div className="alert" role="alert">
+
+        <div className="alert-welcome">
+          
+          <marquee behavior="" direction=""> <h4>Welcome to GO Stream, {account.name} </h4></marquee>
+        </div>
+        {/* <div className="alert-name">
+          <h4>{account.name}</h4>
+        </div> */}
         <div className="alert-avatar">
           <img src={`${imgUrl}${account.avatar}`} />
         </div>
-        <div className="alert-welcome">
-          <h4>Welcome</h4>
-        </div>
-        <div className="alert-name">
-          <h4>{account.name}</h4>
-        </div>
-        <div className="alert-id">
+        {/* <div className="alert-id">
           <h4>{account.id}</h4>
-        </div>
+        </div> */}
         {/* <div className="alert-welcome">
           <h1>{account.username}</h1>
         </div> */}

@@ -106,16 +106,28 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 0vh;
-  width: 50vw;
+  width: 40vw;
+  background-color: rgba(240, 208, 55, 0.7);
+}
+
+.bread-alert .alert-welcome h4 {
+  padding-left: 5vw;
 }
 
 .bread-alert {
   margin-top: 1.2rem;
   margin-bottom: -80px;
   height: 0vh;
-  width: 100vw;
+  width: 151vw;
   display: flex;
   justify-content: center;
+}
+
+.alert-avatar img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+
 }
 
 /* alert end */
@@ -136,7 +148,7 @@ body {
 .carousel-caption {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   /* margin-bottom: 20vh; */
   background-color: rgba(38, 37, 71, 0.5);
   border-radius: 25px;
@@ -147,6 +159,8 @@ body {
   text-align: right;
   font-weight: 900;
   padding: 0 5vw;
+  margin-top: 30px;
+  padding-right: 0px;
 }
 
 /* .carousel-ket h3 {
@@ -164,6 +178,7 @@ body {
   font-size: 3rem;
   padding-left: 50px;
   width: 25vw;
+  margin-top: 20px;
 }
 
 .carousel-caption {
@@ -338,7 +353,7 @@ body {
   background-color: rgba(240, 208, 55, 0.8);
   border-radius: 25px;
   height: 42vh;
-  width: 30vw;
+  width: 35vw;
 }
 
 .modal-card .card img {
@@ -346,6 +361,16 @@ body {
   border-radius: 25px;
   height: 30vh;
   object-fit: cover;
+}
+
+.modal-card .card .col-md-4 p {
+  margin-top: -11px;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 10px;
+  /* border-radius: 25px; */
+  /* height: 30vh; */
+  /* object-fit: cover; */
 }
 
 .modal-card .card h4 {
