@@ -53,7 +53,7 @@ function Footer() {
             <h1>
               GO<span>{">"}</span>
             </h1>
-            <p>copyright &copy 2023</p>
+            <p>copyright © 2023</p>
           </div>
         </div>
       </footer>

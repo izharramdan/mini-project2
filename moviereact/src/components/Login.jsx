@@ -68,7 +68,7 @@ function Login() {
                   )
                   .then((result4) => {
                     // let data = await Promise.all(result4.data)
-                    localStorage.getItem("accountAvatar", result4.data.avatar.avatar_path);
+                    localStorage.setItem("accountAvatar", result4.data.avatar.tmdb.avatar_path);
                     localStorage.setItem("accountId", result4.data.id);
                     localStorage.setItem("accountUsername", result4.data.username);
                     localStorage.setItem("accountName", result4.data.name);

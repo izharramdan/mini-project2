@@ -104,15 +104,18 @@ body {
   margin-top: -15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 0vh;
+  width: 50vw;
 }
 
 .bread-alert {
   margin-top: 1.2rem;
   margin-bottom: -80px;
   height: 0vh;
-  width: 60vw;
-  /* display: flex; */
-  /* justify-content: flex-end; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 /* alert end */

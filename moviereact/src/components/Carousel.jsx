@@ -79,6 +79,8 @@ const Carousel = () => {
                     <div className="carousel-ket">
                       <h3>{movie.title}</h3>
                       <p>{movie.overview}</p>
+                      <p>{movie.id}</p>
+                      <p>{movie.popularity}</p>
                     </div>
                   </div>
                 </div>
@@ -100,6 +102,8 @@ const Carousel = () => {
                     <div className="carousel-ket">
                       <h3>{movie.title}</h3>
                       <p>{movie.overview}</p>
+                      <p>{movie.id}</p>
+                      <p>{movie.popularity}</p>
                     </div>
                   </div>
                 </div>
