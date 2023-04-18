@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Modal from "./Modal";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faInfo, faInfoCircle, faPlay } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faInfo,
+  faInfoCircle,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 // import Alert from "./AlertLoginInfo";
 
 const Carousel = () => {
@@ -29,12 +34,11 @@ const Carousel = () => {
 
   return (
     <div
-   
       id="carouselExampleCaptions"
       className="carousel carousel-hero slide"
       data-bs-ride="false"
     >
-       {/* <Alert /> */}
+      {/* <Alert /> */}
       <div className="carousel-indicators">
         <button
           type="button"
@@ -72,15 +76,19 @@ const Carousel = () => {
                     <div className="btn-play">
                       <a href="player.html" id="buttonAlert1">
                         <button type="button" className="btn btn-danger">
-                          <i className="fa-sharp fa-solid fa-play"><FontAwesomeIcon icon={faPlay} /></i>
+                          <i className="fa-sharp fa-solid fa-play">
+                            <FontAwesomeIcon icon={faPlay} />
+                          </i>
                         </button>
                       </a>
+                      <p>ID: {movie.id}</p>
+                      <p>Popularity: {movie.popularity}</p>
+                    </div>
+                    <div className="carousel-movie-title">
+                      <h3>{movie.title}</h3>
                     </div>
                     <div className="carousel-ket">
-                      <h3>{movie.title}</h3>
-                      <p>{movie.overview}</p>
-                      <p>{movie.id}</p>
-                      <p>{movie.popularity}</p>
+                      <p>{movie.overview.slice(0, 180)}....</p>
                     </div>
                   </div>
                 </div>
@@ -95,15 +103,19 @@ const Carousel = () => {
                     <div className="btn-play">
                       <a href="player.html" id="buttonAlert1">
                         <button type="button" className="btn btn-danger">
-                          <i className="fa-sharp fa-solid fa-play"><FontAwesomeIcon icon={faPlay} /></i>
+                          <i className="fa-sharp fa-solid fa-play">
+                            <FontAwesomeIcon icon={faPlay} />
+                          </i>
                         </button>
                       </a>
+                      <p>ID: {movie.id}</p>
+                      <p>Popularity: {movie.popularity}</p>
+                    </div>
+                    <div className="carousel-movie-title">
+                      <h3>{movie.title}</h3>
                     </div>
                     <div className="carousel-ket">
-                      <h3>{movie.title}</h3>
-                      <p>{movie.overview}</p>
-                      <p>{movie.id}</p>
-                      <p>{movie.popularity}</p>
+                      <p>{movie.overview.slice(0, 180)}....</p>
                     </div>
                   </div>
                 </div>

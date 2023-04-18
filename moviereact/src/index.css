@@ -146,18 +146,28 @@ body {
 .carousel-ket {
   text-align: right;
   font-weight: 900;
-  padding: 0 10vw;
+  padding: 0 5vw;
 }
 
-.carousel-ket h3 {
+/* .carousel-ket h3 {
   font-style: italic;
   color: rgba(240, 208, 55, 1);
   font-weight: bold;
   font-size: 3rem;
+} */
+
+
+.carousel-movie-title h3 {
+  font-style: italic;
+  color: rgba(240, 208, 55, 1);
+  font-weight: bold;
+  font-size: 3rem;
+  padding-left: 50px;
+  width: 25vw;
 }
 
-.carousel-caption .btn-play {
-  padding: 0 10vw;
+.carousel-caption {
+  padding: 0 5vw;
 }
 
 .carousel-caption .btn-play button {
@@ -167,6 +177,14 @@ body {
   border-radius: 50px;
   height: 5vh;
   width: 5vw;
+  margin-bottom: 10px;
+}
+
+.carousel-caption .btn-play  {
+  padding-top: 5vh;
+  text-align: left;
+  font-style: italic;
+
 }
 
 /* carousel end */
