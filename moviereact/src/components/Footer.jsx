@@ -11,7 +11,6 @@ function Footer() {
             <input
               type="text"
               className="form-control"
-              id="exampleFormControlInput1"
               placeholder="enter your name"
             />
           </div>
@@ -22,7 +21,6 @@ function Footer() {
             <input
               type="email"
               className="form-control"
-              id="exampleFormControlInput1"
               placeholder="enter your email"
             />
           </div>

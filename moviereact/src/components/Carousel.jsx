@@ -3,6 +3,7 @@ import axios from "axios";
 import Modal from "./Modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faInfo, faInfoCircle, faPlay } from '@fortawesome/free-solid-svg-icons'
+// import Alert from "./AlertLoginInfo";
 
 const Carousel = () => {
   const [movies, setMovies] = useState([]);
@@ -28,10 +29,12 @@ const Carousel = () => {
 
   return (
     <div
+   
       id="carouselExampleCaptions"
       className="carousel carousel-hero slide"
       data-bs-ride="false"
     >
+       {/* <Alert /> */}
       <div className="carousel-indicators">
         <button
           type="button"

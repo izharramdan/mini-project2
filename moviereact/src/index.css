@@ -101,12 +101,18 @@ body {
 .alert {
   border-radius: 20px;
   z-index: 999;
+  margin-top: -15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bread-alert {
-  margin: 1rem;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 1.2rem;
+  margin-bottom: -80px;
+  height: 0vh;
+  width: 60vw;
+  /* display: flex; */
+  /* justify-content: flex-end; */
 }
 
 /* alert end */

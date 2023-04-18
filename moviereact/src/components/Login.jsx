@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Alert from "./AlertLoginInfo";
+
 // import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
@@ -11,8 +13,10 @@ function Login() {
 
   const session = localStorage.getItem("session_id");
   const account = {
+    avatar: localStorage.getItem("accountAvatar"),
     id: localStorage.getItem("accountId"),
     username: localStorage.getItem("accountUsername"),
+    name: localStorage.getItem("accountName"),
   };
 
   useEffect(() => {}, []);
@@ -64,11 +68,10 @@ function Login() {
                   )
                   .then((result4) => {
                     // let data = await Promise.all(result4.data)
+                    localStorage.getItem("accountAvatar", result4.data.avatar.avatar_path);
                     localStorage.setItem("accountId", result4.data.id);
-                    localStorage.setItem(
-                      "accountUsername",
-                      result4.data.username
-                    );
+                    localStorage.setItem("accountUsername", result4.data.username);
+                    localStorage.setItem("accountName", result4.data.name);
                     console.log(localStorage.getItem("account"));
                     console.log(result4.data);
                     window.location.reload();
@@ -89,22 +92,6 @@ function Login() {
     <div className="signIn">
       {!session ? (
         <>
-          {/* <h1>Login</h1>
-          <input
-            value={username}
-            onChange={handleUsername}
-            type="text"
-            name=""
-            id=""
-          />
-          <input
-            value={password}
-            onChange={handlePassword}
-            type="text"
-            name=""
-            id=""
-          />
-          <button onClick={handleApi}>Login</button> */}
           <div
             className="modal fade"
             id="signInModal"
@@ -123,7 +110,6 @@ function Login() {
                       name=""
                       className="form-control input_username"
                       type="text"
-                      id="exampleFormControlInput1"
                       placeholder="username"
                     />
                   </div>
@@ -134,7 +120,6 @@ function Login() {
                       onChange={handlePassword}
                       className="form-control input_password"
                       type="password"
-                      id="exampleFormControlInput1"
                       placeholder="password"
                     />
                   </div>
@@ -154,9 +139,15 @@ function Login() {
         </>
       ) : (
         <>
-          <button onClick={handleLogout}>Logout</button>
-          <h1>{account.id}</h1>
-          <h1>{account.username}</h1>
+          {/* <div className="bread-alert">
+            <div className="alert alert-success" role="alert">
+              Welcome
+              <h1>{account.username}</h1>
+              <h1>{account.id}</h1>
+              <h1>{account.name}</h1>
+            </div>
+          </div> */}
+          <Alert />
         </>
       )}
     </div>

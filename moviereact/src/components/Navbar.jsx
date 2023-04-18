@@ -1,4 +1,7 @@
+import React from "react";
+
 function Navbar() {
+  const session = localStorage.getItem("session_id");
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
@@ -45,16 +48,33 @@ function Navbar() {
                 />
               </form>
             </div>
-            <div className="btn-signin">
-              <button
-                className="btn btn-danger"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#signInModal"
-              >
-                sign in
-              </button>
-            </div>
+            {session ? (
+              <div className="btn-signout">
+                <button
+                  onClick={() => {
+                    localStorage.clear();
+                    window.location.reload();
+                  }}
+                  className="btn btn-danger"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signInModal"
+                >
+                  sign out
+                </button>
+              </div>
+            ) : (
+              <div className="btn-signin">
+                <button
+                  className="btn btn-danger"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signInModal"
+                >
+                  sign in
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
