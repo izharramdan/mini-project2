@@ -22,17 +22,17 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="index.html">
+              <a className="nav-link" aria-current="page" href="#">
                 home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="categories.html">
+              <a className="nav-link" href="#">
                 categories
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="mylist.html">
+              <a className="nav-link" href="#">
                 my list
               </a>
             </li>
